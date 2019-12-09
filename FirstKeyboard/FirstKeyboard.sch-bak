@@ -266,4 +266,112 @@ F 3 "" H 1000 6000 50  0001 C CNN
 	1    1000 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEE772B
+P 2700 5250
+F 0 "C?" V 2900 5250 50  0000 C CNN
+F 1 "100n" V 2800 5250 50  0000 C CNN
+F 2 "" H 2700 5250 50  0001 C CNN
+F 3 "~" H 2700 5250 50  0001 C CNN
+	1    2700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEE7C22
+P 2400 5250
+F 0 "C?" V 2600 5250 50  0000 C CNN
+F 1 "100n" V 2500 5250 50  0000 C CNN
+F 2 "" H 2400 5250 50  0001 C CNN
+F 3 "~" H 2400 5250 50  0001 C CNN
+	1    2400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEE8632
+P 2100 5250
+F 0 "C?" V 2300 5250 50  0000 C CNN
+F 1 "1uF" V 2200 5250 50  0000 C CNN
+F 2 "" H 2100 5250 50  0001 C CNN
+F 3 "~" H 2100 5250 50  0001 C CNN
+	1    2100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DEE962B
+P 1800 5250
+F 0 "C?" V 2000 5250 50  0000 C CNN
+F 1 "10uF" V 1900 5250 50  0000 C CNN
+F 2 "" H 1800 5250 50  0001 C CNN
+F 3 "~" H 1800 5250 50  0001 C CNN
+	1    1800 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5150 1800 5000
+Wire Wire Line
+	1800 5000 2100 5000
+Wire Wire Line
+	2700 5000 2700 5150
+Wire Wire Line
+	2700 5500 2400 5500
+Wire Wire Line
+	1800 5500 1800 5350
+Wire Wire Line
+	2700 5350 2700 5500
+Wire Wire Line
+	2100 5000 2100 5150
+Wire Wire Line
+	2100 5350 2100 5500
+Connection ~ 2100 5000
+Wire Wire Line
+	2100 5000 2250 5000
+Connection ~ 2100 5500
+Wire Wire Line
+	2100 5500 1800 5500
+Wire Wire Line
+	2400 5000 2400 5150
+Wire Wire Line
+	2400 5350 2400 5500
+Connection ~ 2400 5000
+Wire Wire Line
+	2400 5000 2700 5000
+Connection ~ 2400 5500
+Wire Wire Line
+	2400 5500 2250 5500
+$Comp
+L power:+5V #PWR?
+U 1 1 5DEEE4DF
+P 2250 4900
+F 0 "#PWR?" H 2250 4750 50  0001 C CNN
+F 1 "+5V" H 2265 5073 50  0000 C CNN
+F 2 "" H 2250 4900 50  0001 C CNN
+F 3 "" H 2250 4900 50  0001 C CNN
+	1    2250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4900 2250 5000
+Connection ~ 2250 5000
+Wire Wire Line
+	2250 5000 2400 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5DEEF1A0
+P 2250 5600
+F 0 "#PWR?" H 2250 5350 50  0001 C CNN
+F 1 "GND" V 2255 5472 50  0000 R CNN
+F 2 "" H 2250 5600 50  0001 C CNN
+F 3 "" H 2250 5600 50  0001 C CNN
+	1    2250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5600 2250 5500
+Connection ~ 2250 5500
+Wire Wire Line
+	2250 5500 2100 5500
 $EndSCHEMATC
