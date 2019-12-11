@@ -655,42 +655,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 1475 8900 1475
 Wire Wire Line
-	13400 1525 13400 1475
-Wire Wire Line
 	10400 1525 10400 1475
-$Comp
-L Device:D_Small D82
-U 1 1 5E0CFDC0
-P 13400 1625
-F 0 "D82" V 13400 1375 50  0000 L CNN
-F 1 "1N4148W" V 13475 1250 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 13400 1625 50  0001 C CNN
-F 3 "~" V 13400 1625 50  0001 C CNN
-	1    13400 1625
-	0    1    1    0   
-$EndComp
-$Comp
-L acheronSymbols:MXSwitch SW82
-U 1 1 5E0CFDC6
-P 13400 2075
-F 0 "SW82" H 13325 2150 50  0000 L CNN
-F 1 "Ins" H 13300 2050 79  0000 L CNN
-F 2 "acheron_MX:MX100" H 13400 2075 50  0001 C CNN
-F 3 "" H 13400 2075 50  0001 C CNN
-	1    13400 2075
-	1    0    0    -1  
-$EndComp
-$Comp
-L acheronSymbols:MXSwitch SW77
-U 1 1 5E0CFDCC
-P 12650 2075
-F 0 "SW77" H 12575 2150 50  0000 L CNN
-F 1 "End" H 12525 2050 79  0000 L CNN
-F 2 "acheron_MX:MX100" H 12650 2075 50  0001 C CNN
-F 3 "" H 12650 2075 50  0001 C CNN
-	1    12650 2075
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Small D77
 U 1 1 5E0CFDD2
@@ -812,9 +777,6 @@ Wire Wire Line
 Connection ~ 11900 1475
 Wire Wire Line
 	11900 1475 12650 1475
-Connection ~ 12650 1475
-Wire Wire Line
-	12650 1475 13400 1475
 Connection ~ 8900 1475
 Text GLabel 1550 3325 0    50   Input ~ 0
 Row3
@@ -1037,17 +999,6 @@ F 2 "Diode_SMD:D_SOD-123" V 12650 2550 50  0001 C CNN
 F 3 "~" V 12650 2550 50  0001 C CNN
 	1    12650 2550
 	0    1    1    0   
-$EndComp
-$Comp
-L acheronSymbols:MXSwitch SW78
-U 1 1 5E0ED070
-P 12650 3000
-F 0 "SW78" H 12575 3075 50  0000 L CNN
-F 1 "Delete" H 12475 2975 79  0000 L CNN
-F 2 "acheron_MX:MX100" H 12650 3000 50  0001 C CNN
-F 3 "" H 12650 3000 50  0001 C CNN
-	1    12650 3000
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Small D72
@@ -2279,7 +2230,7 @@ L acheronSymbols:MXSwitch SW17
 U 1 1 5E2199D5
 P 3650 6700
 F 0 "SW17" H 3575 6775 50  0000 L CNN
-F 1 "Alt" H 3550 6675 79  0000 L CNN
+F 1 "LAlt" H 3550 6675 79  0000 L CNN
 F 2 "acheron_MX:MX100" H 3650 6700 50  0001 C CNN
 F 3 "" H 3650 6700 50  0001 C CNN
 	1    3650 6700
@@ -2652,7 +2603,7 @@ L acheronSymbols:MXSwitch SW59
 U 1 1 5E2199F8
 P 9650 6700
 F 0 "SW59" H 9575 6775 50  0000 L CNN
-F 1 "Alt" H 9550 6675 79  0000 L CNN
+F 1 "RAlt" H 9550 6675 79  0000 L CNN
 F 2 "acheron_MX:MX100" H 9650 6700 50  0001 C CNN
 F 3 "" H 9650 6700 50  0001 C CNN
 	1    9650 6700
@@ -3007,10 +2958,6 @@ Wire Wire Line
 Connection ~ 12250 3000
 Wire Wire Line
 	12250 3000 12250 2075
-Wire Wire Line
-	13050 2075 13000 2075
-Wire Wire Line
-	13000 2075 13000 1250
 Text GLabel 3250 1250 1    50   Input ~ 0
 Col3
 Text GLabel 4000 1250 1    50   Input ~ 0
@@ -3037,8 +2984,6 @@ Text GLabel 11500 1250 1    50   Input ~ 0
 Col14
 Text GLabel 12250 1250 1    50   Input ~ 0
 Col15
-Text GLabel 13000 1250 1    50   Input ~ 0
-Col16
 $Comp
 L acheronSymbols:MXSwitch SW63
 U 1 1 5E1F31A0
@@ -3098,4 +3043,26 @@ Wire Wire Line
 	10400 4250 11900 4250
 Wire Wire Line
 	10750 3925 10750 5775
+$Comp
+L acheronSymbols:MXSwitch SW78
+U 1 1 5E0ED070
+P 12650 3000
+F 0 "SW78" H 12575 3075 50  0000 L CNN
+F 1 "Delete" H 12475 2975 79  0000 L CNN
+F 2 "acheron_MX:MX100" H 12650 3000 50  0001 C CNN
+F 3 "" H 12650 3000 50  0001 C CNN
+	1    12650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW77
+U 1 1 5E0CFDCC
+P 12650 2075
+F 0 "SW77" H 12575 2150 50  0000 L CNN
+F 1 "End" H 12525 2050 79  0000 L CNN
+F 2 "acheron_MX:MX100" H 12650 2075 50  0001 C CNN
+F 3 "" H 12650 2075 50  0001 C CNN
+	1    12650 2075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
