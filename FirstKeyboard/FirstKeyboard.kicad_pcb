@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 8)
     (tracks 0)
     (zones 0)
     (modules 179)
@@ -11175,5 +11175,14 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_arc (start 345.28125 26.19375) (end 350.04375 26.19375) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 345.28125 135.73125) (end 345.28125 140.49375) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 45.24375 135.73125) (end 40.48125 135.73125) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 45.24375 26.19375) (end 45.24375 21.43125) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 345.28125 21.43125) (end 45.24375 21.43125) (layer Edge.Cuts) (width 0.05) (tstamp 5DF7A481))
+  (gr_line (start 350.04375 135.73125) (end 350.04375 26.19375) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 45.24375 140.49375) (end 345.28125 140.49375) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 40.48125 26.19375) (end 40.48125 135.73125) (layer Edge.Cuts) (width 0.05))
 
 )
